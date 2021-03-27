@@ -51,3 +51,4 @@ wheels/
 *.egg
 resources/*.json
 resources/*.wav
+target/
