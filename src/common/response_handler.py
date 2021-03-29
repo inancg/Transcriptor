@@ -1,10 +1,8 @@
-from abc import ABC, abstractmethod
 from src.common.transcribe_item import TranscribeItem
 from src.common.constants import CONFIDENCE_THRESHOLD
 
 
-class ResponseHandlerBase(ABC):
-
+class ResponseHandlerBase:
     def __init__(self, confidence_threshold=CONFIDENCE_THRESHOLD):
         self._CONFIDENCE_THRESHOLD = confidence_threshold
         self.suspicion_zones = []
@@ -31,7 +29,6 @@ class ResponseHandlerBase(ABC):
                 result_transcript += item.content + " "
         return result_transcript
 
-    @abstractmethod
     def extract_results(self, json_file=None, json_url=None):
         """
         :param json_file: path to a local json file

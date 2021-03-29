@@ -1,0 +1,56 @@
+{
+  "jobName": "aws_not_suspicious",
+  "accountId": "001122334455",
+  "results": {
+    "transcripts": [
+      {
+        "transcript": "This is it."
+      }
+    ],
+    "items": [
+      {
+        "start_time": "1.0",
+        "end_time": "1.5",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "This"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "1.5",
+        "end_time": "2.0",
+        "alternatives": [
+          {
+            "confidence": "0.9",
+            "content": "is"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "start_time": "2.1",
+        "end_time": "2.3",
+        "alternatives": [
+          {
+            "confidence": "1.0",
+            "content": "it"
+          }
+        ],
+        "type": "pronunciation"
+      },
+      {
+        "alternatives": [
+          {
+            "confidence": "0.0",
+            "content": "."
+          }
+        ],
+        "type": "punctuation"
+      }
+    ]
+  },
+  "status": "COMPLETED"
+}

@@ -12,5 +12,5 @@ class ResponseHandler(ResponseHandlerBase):
             data = json.loads(pd.read_json(json_url).to_json())
         else:
             raise Exception("JSON failed to load")
-
+        # TODO update logic
         return data['results']
