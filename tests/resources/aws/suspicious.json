@@ -34,7 +34,7 @@
         "alternatives": [
           {
             "confidence": "0.0",
-            "content": "."
+            "content": ","
           }
         ],
         "type": "punctuation"

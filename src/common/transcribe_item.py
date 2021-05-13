@@ -9,6 +9,13 @@ class TranscribeItem:
         self.end_time = end_time
         self.item_type = item_type
 
+    def __eq__(self, other):
+        return self.content == other.content and \
+               self.confidence == other.confidence and \
+               self.start_time == other.start_time and \
+               self.end_time == other.end_time and \
+               self.item_type == other.item_type
+
 
 class TranscribeItemType(Enum):
     PUNCTUATION = 1
