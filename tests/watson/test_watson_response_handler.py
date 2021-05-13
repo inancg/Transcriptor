@@ -3,8 +3,8 @@ import unittest
 from src.watson.response_handler import ResponseHandler \
     as WatsonResponseHandler
 from tests.common.constants import WATSON_TEST_RESOURCES_LOCATION, \
-    TEST_CONFIDENCE_THRESHOLD, TRANSCRIBE_ITEMS_SUSPICIOUS, \
-    TRANSCRIBE_ITEMS_NOT_SUSPICIOUS
+    TEST_CONFIDENCE_THRESHOLD, TRANSCRIBE_ITEMS_SUSPICIOUS_WATSON,\
+    TRANSCRIBE_ITEMS_NOT_SUSPICIOUS_WATSON
 
 
 class TestWatsonResponseHandler(unittest.TestCase):
@@ -14,18 +14,18 @@ class TestWatsonResponseHandler(unittest.TestCase):
                                                      TEST_CONFIDENCE_THRESHOLD)
 
     def test_extract_results_with_suspicion(self):
-        self.assertDictEqual(
+        self.assertListEqual(
             self.response_handler.extract_results(
                 json_file=WATSON_TEST_RESOURCES_LOCATION + 'suspicious.json'),
-            TRANSCRIBE_ITEMS_SUSPICIOUS
+            TRANSCRIBE_ITEMS_SUSPICIOUS_WATSON  # TODO replace
         )
 
     def test_extract_results_without_suspicion(self):
-        self.assertDictEqual(
+        self.assertListEqual(
             self.response_handler.extract_results(
                 json_file=WATSON_TEST_RESOURCES_LOCATION + 'not_suspicious'
                                                            '.json'),
-            TRANSCRIBE_ITEMS_NOT_SUSPICIOUS
+            TRANSCRIBE_ITEMS_NOT_SUSPICIOUS_WATSON
         )
 
 

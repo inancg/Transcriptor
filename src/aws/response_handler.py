@@ -19,7 +19,7 @@ class ResponseHandler(ResponseHandlerBase):
         return [self.transform_to_transcribe_item(item)
                 for item in data['results']['items']]
 
-    def transform_to_transcribe_item(self, item) -> TranscribeItem:
+    def transform_to_transcribe_item(self, item: dict) -> TranscribeItem:
         if item['type'] == "pronunciation":
             self.last_item_end_time = item['end_time']
             return TranscribeItem(content=item['alternatives'][0]['content'],

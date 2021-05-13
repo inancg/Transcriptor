@@ -1,1 +1,95 @@
-{}
+{
+   "created": "2021-05-13T11:22:33.444Z",
+   "id": "11223344",
+   "updated": "2021-05-13T11:22:55.444Z",
+   "results": [{
+      "result_index": 0,
+      "results": [
+         {
+            "end_of_utterance": "silence",
+            "word_alternatives": [
+               {
+                  "start_time": 0,
+                  "end_time": 0.1,
+                  "alternatives": [{
+                     "confidence": 1,
+                     "word": "this"
+                  }]
+               },
+               {
+                  "start_time": 0.1,
+                  "end_time": 0.2,
+                  "alternatives": [{
+                     "confidence": 0.99,
+                     "word": "is"
+                  }]
+               },
+               {
+                  "start_time": 0.2,
+                  "end_time": 0.3,
+                  "alternatives": [{
+                     "confidence": 0.9,
+                     "word": "a"
+                  }]
+               },
+               {
+                  "start_time": 0.3,
+                  "end_time": 0.4,
+                  "alternatives": [{
+                     "confidence": 0.91,
+                     "word": "test"
+                  }]
+               }
+            ]
+         },
+         {
+            "end_of_utterance": "full_stop",
+            "word_alternatives": [
+               {
+                  "start_time": 0.4,
+                  "end_time": 0.5,
+                  "alternatives": [
+                     {
+                        "confidence": 0.92,
+                        "word": "where"
+                     }
+                  ]
+               },
+               {
+                  "start_time": 0.5,
+                  "end_time": 0.6,
+                  "alternatives": [{
+                     "confidence": 0.96,
+                     "word": "nothing"
+                  }]
+               },
+               {
+                  "start_time": 0.6,
+                  "end_time": 0.7,
+                  "alternatives": [{
+                     "confidence": 0.93,
+                     "word": "suspicious"
+                  }]
+               },
+               {
+                  "start_time": 0.7,
+                  "end_time": 0.8,
+                  "alternatives": [{
+                     "confidence": 0.93,
+                     "word": "is"
+                  }]
+               },
+               {
+                  "start_time": 0.9,
+                  "end_time": 1.0,
+                  "alternatives": [{
+                     "confidence": 0.96,
+                     "word": "happening"
+                  }]
+               }
+            ]
+         }
+      ]
+   }],
+   "status": "completed"
+}

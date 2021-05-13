@@ -37,6 +37,14 @@ class ResponseHandlerBase:
         """
         raise NotImplementedError
 
+    def transform_to_transcribe_item(self, item: dict) -> TranscribeItem:
+        """
+        Helper function for extract results.
+        :param item: domain-specific dictionary
+        :return: the input as a TranscribeItem
+        """
+        raise NotImplementedError
+
     def should_suspect(self, item: TranscribeItem):
         """
         Checks if the confidence of the item is lower than the threshold
