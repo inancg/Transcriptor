@@ -21,3 +21,5 @@ WATSON_MAX_ALTERNATIVES = 3
 WATSON_WORD_ALTERNATIVES_THRESHOLD = 0.1
 WATSON_SPLIT_AT_PHRASE_END = True
 
+# Sentence Analysis
+CC_LIST = ["and", "but", "or", "nor", "if", "whether"]

@@ -16,6 +16,9 @@ class TranscribeItem:
                self.end_time == other.end_time and \
                self.item_type == other.item_type
 
+    def __repr__(self):
+        return "{} [{}]".format(self.content, self.confidence)
+
 
 class TranscribeItemType(Enum):
     PUNCTUATION = 1
